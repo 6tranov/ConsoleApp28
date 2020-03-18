@@ -11,7 +11,7 @@ namespace ConsoleApp28
         static void Main(string[] args)
         {
             {
-                var sg = new StringGenerator("はいく", 50000000);
+                var sg = new StringGenerator(new MatchDiscriminator("はいく"), 50000000);
                 ISuccessPrint isp = new SuccessConsoleSimplePrint(10, 10);
                 IFailurePrint ifp = new FailureConsolePrint("終わりませんでした。");
 
